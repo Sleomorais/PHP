@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<meta charset="UTF-8">
+<button id="myBtn" onclick="clica()">me toca</button>
+<script type="text/javascript">
+function clica() {
+    var icon="logo2.png";
+    var title=".Com Informatica";
+    var mensagem="venha ver seu equipamento e acompanhe a etapa de conserto!";
+    var link="ste.html";    
+
+document.getElementById("myBtn").addEventListener("click",function(){   
+    if(Notification.permission !=="granted"){
+    Notification.requestPermission();
+}});
+function notifyMe(icon,title,mensagem,link){
+    if(!Notification){
+        alert("navegador nao presta");
+        return;
+    }
+    if(Notification.permission !=="granted"){
+    Notification.requestPermission();
+}else{
+ var notification=new Notification( title,{
+     icon:icon,
+     body:mensagem
+ });
+ notification.onclick=function(){
+  window.open(link);
+ };
+}
+}
+var icon="logo2.png";
+var title=".Com Informatica";
+var mensagem="venha ver seu equipamento e acompanhe a etapa de conserto!";
+var link="cliente interface/index.php";
+    notifyMe(icon,title,mensagem,link);
+}
+</script>
+</body>
+</html>

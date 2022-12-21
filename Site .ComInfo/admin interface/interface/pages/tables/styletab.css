@@ -1,0 +1,48 @@
+body{
+    background-image: url("img/back12.jpg");
+  background-repeat: none;
+  background-size: 100%;
+  background-position: center;
+}
+table{
+  background-color:rgb(251, 246, 246);
+    color:rgb(255, 254, 254);
+    width: 97%;
+    font-size: 18px;
+    text-shadow: 2px 2px 0px black;
+    border-collapse: collapse;
+    background-color: transparent;
+    border:none;
+  border-radius:10px;
+  box-shadow: 2px 1px 5px 10px rgb(73, 73, 78);
+}
+table th{
+  width:70px; 
+  text-align:center;
+  font-weight: bolder;
+}
+table td{
+  width:70px; 
+  text-align:center;
+}
+a{
+	text-decoration:none;
+}
+td img{
+	width:40px;
+	height:40px;
+}
+/* td img{position:relative};
+td img:hover{top:-2px;border-bottom:2px solid #999}; */
+
+.ex img:hover{
+	background-color:red;
+	width:45px;
+	height:45px;
+	background-image:url('../img/lixoaberto.png')
+}
+.ed img:hover{
+	background-color:rgb(0, 255, 0);
+	width:45px;
+	height:45px;
+}

@@ -1,0 +1,28 @@
+body{
+    background-image: url("back12.jpg");
+  background-repeat: none;
+  background-size: 100%;
+  background-position: center;
+  color:rgb(255, 255, 255);
+}
+
+form input{
+    width: 300px;
+    height: 30px;
+    border-radius: 7px;
+    text-align: center;
+    
+    
+}
+form #btn{
+    color:rgb(0, 0, 0);
+    background-color: rgb(96, 246, 196);
+    border: 5px double black;
+}
+#select{
+    width: 300px;
+    height: 30px;
+    border-radius: 7px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+}
